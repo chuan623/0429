@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹市村里級80~100歲熱圖</title>
+</head>
+<body>
+    <h1>新竹市村里級80~100歲熱圖</h1>
+    <p>內容為新竹市各區域80到100歲的高齡者人數差不多，但平均下來的實際數量只比65到79歲的高齡者少了一點而已。我認為可以更加注重超高齡者的福利措施，並提供相關協助。過去大家都只認為家裡的老人只會活到大概80歲，但數據分析下來超過這個歲數的人似乎大有人在!</p>
+    <iframe src="https://plotdb.io/v/chart/37311" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
