@@ -1,1 +1,62 @@
-# 0429_65-79
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹市65~79歲村里級熱圖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+        }
+        .content {
+            margin: 20px;
+        }
+        .heatmap {
+            margin: 20px auto;
+            width: 80%;
+            height: 400px;
+            background: linear-gradient(to right, #ffcccc, #ff6666, #cc0000);
+            border: 1px solid #ddd;
+        }
+        .annotation {
+            margin: 20px auto;
+            width: 80%;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.6;
+        }
+        iframe {
+            margin: 20px auto;
+            width: 80%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>新竹市65~79歲村里級熱圖</h1>
+    </header>
+    <div class="content">
+        <div class="annotation">
+            <p>此圖可見新竹市65~79歲的老人以東區為最多，香山區，最後是北區。以我對家鄉的觀察，北區老人相對較少的原因是北區為新竹相對較繁華的地方，大多數購物中心、娛樂場所都採經營，東區則比較偏向鄉村生活，如我自己的外公外婆就是住在東區，享受退休生活。</p>
+        </div>
+        <iframe src="https://plotdb.com/chart/37307/" title="新竹市65~79歲村里級熱圖"></iframe>
+        <div class="heatmap">
+            <!-- 模擬熱圖區域 -->
+            <p style="padding-top: 180px; color: white;">熱圖範例</p>
+        </div>
+        <p>這是一個展示新竹市65~79歲人口分布的熱圖範例。</p>
+    </div>
+</body>
+</html>
