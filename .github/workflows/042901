@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹市村里級80~100歲熱圖</title>
+    <style>
+        iframe {
+            border: none;
+        }
+        .description {
+            display: none; /* 隱藏描述文字 */
+        }
+    </style>
+</head>
+<body>
+    <h1>新竹市村里級80~100歲熱圖</h1>
+    <!-- 嵌入 PlotDB 圖表 -->
+    <iframe src="https://plotdb.io/v/chart/37311" width="100%" height="600px"></iframe>
+</body>
+</html>
