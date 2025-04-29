@@ -1,35 +1,50 @@
-// 示例：使用 PlotDB API 更新圖表標題和描述
-const fetch = require('node-fetch');
-
-const apiKey = 'YOUR_PLOTDB_API_KEY'; // 替換為你的 API 金鑰
-const chartId = '37311'; // 圖表 ID
-const chartTitle = '新竹市村里級80~100歲熱圖';
-const chartDescription = `
-新竹市各區域80到100歲的高齡者人數差不多，但平均下來的實際數量只比65到79歲的高齡者少了一點而已。
-我認為可以更加注重超高齡者的福利措施，並提供相關協助。
-過去大家都只認為家裡的老人只會活到大概80歲，但數據分析下來超過這個歲數的人似乎大有人在!
-`;
-
-// 更新圖表的函數
-async function updatePlotdbChart() {
-  const response = await fetch(`https://api.plotdb.com/v1/chart/${chartId}`, {
-    method: 'PATCH',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      title: chartTitle,
-      description: chartDescription,
-    }),
-  });
-
-  if (response.ok) {
-    console.log('圖表更新成功！');
-  } else {
-    const error = await response.json();
-    console.error('圖表更新失敗：', error);
-  }
-}
-
-updatePlotdbChart();
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹市村里級80~100歲熱圖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            text-align: justify;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>新竹市村里級80~100歲熱圖</h1>
+        <p>
+            新竹市各區域80到100歲的高齡者人數差不多，但平均下來的實際數量只比65到79歲的高齡者少了一點而已。
+            我認為可以更加注重超高齡者的福利措施，並提供相關協助。
+            過去大家都只認為家裡的老人只會活到大概80歲，但數據分析下來超過這個歲數的人似乎大有人在!
+        </p>
+        <iframe src="https://plotdb.com/chart/37311/v2" title="新竹市村里級80~100歲熱圖"></iframe>
+    </div>
+</body>
+</html>
